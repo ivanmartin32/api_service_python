@@ -31,6 +31,7 @@ import os
 import base64
 import json
 from datetime import datetime, timedelta
+from flask_sqlalchemy import SQLAlchemy
 
 from flask import Flask, request, jsonify, render_template, Response, redirect
 import matplotlib

@@ -71,3 +71,14 @@ def report(limit=0, offset=0):
         json_result_list.append(json_result)
 
     return json_result_list
+
+def nationality_review():
+
+    query = db.session.query(Persona)
+    query_total= query.all()  
+    
+    x = [x.id for x in query_total]
+    y =[x.age for x in query_total]
+
+    return x,y   
+
